@@ -1,0 +1,80 @@
+{
+  "site": {
+    "title": "Mazarina Trade Company",
+    "description": "Azərbaycanda ən böyük distribütor şirkətlərdən biri"
+  },
+  "nav": {
+    "home": "Ana Səhifə",
+    "about": "Şirkət Haqqında",
+    "brands": "Brendlərimiz",
+    "distribution": "Distribüsiya",
+    "career": "Karyera",
+    "contact": "Əlaqə",
+    "language": "Dil"
+  },
+  "home": {
+    "hero_title": "BİZ AZƏRBAYCANDA ƏN BÖYÜK DİSTRİBÜTOR ŞİRKƏTLƏRDƏN BİRİYİK!",
+    "hero_subtitle": "20 ildən artıqdır ki, Mazarina Trade Company portfelində müxtəlif növ mallar olan etibarlı və stabil tərəfdaşdır və bu, bizə ən tələbkar müştəriləri qane etməyə imkan verir.",
+    "contact_us": "Bizimlə əlaqə saxlayın!",
+    "see_brands": "Brendlərimizi görün!",
+    "stats": {
+      "years": "il",
+      "clients": "Müştərilər",
+      "brands": "Beynəlxalq brendlər portfelində",
+      "employees": "işçi. O cümlədən 5 eksklüziv satış komandası",
+      "warehouses": "anbar 18400 kv.metr ilə bütün Azərbaycanda",
+      "transports": "öz nəqliyyatımız 108 kamyon yük maşını, 5 ağır yük maşını, 4 avtomaşın və 8 elektrik maşını"
+    },
+    "distribution_power": "Distribüsiya gücümüz haqqında daha ətraflı!",
+    "our_brands": "Brendlərimiz",
+    "learn_more": "Daha ətraflı",
+    "about_company": "Şirkət haqqında",
+    "company_description": "1998-ci ildə yaradılan Mazarina MMC Azərbaycandakı ən köhnə istehsalçı olan \"Gəncə Şərab-2\" ASC ilə birlikdə şərab və digər alkoqollu məhsulların istehsalı və satışına başlamışdır. Qısa müddət ərzində məhsullar Azərbaycan alkoqollu içki bazarının lideri olmuş və xarici ölkələrə ixrac edilmişdir.",
+    "our_partners": "Tərəfdaşlarımız"
+  },
+  "about": {
+    "title": "Şirkət Haqqında",
+    "established": "Yaradılıb",
+    "description": "1998-ci ildə yaradılan Mazarina MMC Azərbaycandakı ən köhnə istehsalçı olan \"Gəncə Şərab-2\" ASC ilə birlikdə şərab və digər alkoqollu məhsulların istehsalı və satışına başlamışdır."
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "address": "Azərbaycan Respublikası, Bakı, Ələsgər Qayıbov küç., 1222/12",
+    "phone": "Telefon",
+    "email": "E-poçt",
+    "social": "Sosial şəbəkələr"
+  },
+  "admin": {
+    "login": "Admin Girişi",
+    "username": "İstifadəçi adı",
+    "password": "Parol",
+    "submit": "Daxil ol",
+    "dashboard": "Admin Paneli",
+    "brands": "Brendlər",
+    "partners": "Tərəfdaşlar",
+    "settings": "Parametrlər",
+    "logout": "Çıxış",
+    "add": "Əlavə et",
+    "edit": "Redaktə et",
+    "delete": "Sil",
+    "save": "Yadda saxla",
+    "cancel": "Ləğv et"
+  },
+  "errors": {
+    "rule_violation": "Qayda pozuldu: {{detail}}",
+    "not_found": "Səhifə tapılmadı",
+    "server_error": "Server xətası",
+    "validation_error": "Doğrulama xətası",
+    "unauthorized": "İcazəsiz giriş"
+  },
+  "common": {
+    "yes": "Bəli",
+    "no": "Xeyr",
+    "back": "Geri",
+    "next": "Növbəti",
+    "previous": "Əvvəlki",
+    "loading": "Yüklənir...",
+    "search": "Axtarış",
+    "filter": "Filtr"
+  }
+}

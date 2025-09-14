@@ -1,0 +1,80 @@
+{
+  "site": {
+    "title": "Mazarina Trade Company",
+    "description": "One of the largest distribution companies in Azerbaijan"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About the Company",
+    "brands": "Our Brands",
+    "distribution": "Distribution",
+    "career": "Career",
+    "contact": "Contact Us",
+    "language": "Language"
+  },
+  "home": {
+    "hero_title": "WE ARE ONE OF THE LARGEST DISTRIBUTION COMPANIES IN AZERBAIJAN!",
+    "hero_subtitle": "For more than 20 years Mazarina Trade Company is a reliable and stable partner in whose portfolio there is a wide variety of goods, which allows us to satisfy the most demanding client.",
+    "contact_us": "Contact us!",
+    "see_brands": "See our brands!",
+    "stats": {
+      "years": "years",
+      "clients": "Clients",
+      "brands": "International brands in portfolio",
+      "employees": "employees. Including 5 exclusive sales team",
+      "warehouses": "warehouses with 18400 sq. meter in whole Azerbaijan",
+      "transports": "own transports including 108 camion trucks, 5 heavy trucks, 4 auto car and 8 electric car"
+    },
+    "distribution_power": "More about our distribution power!",
+    "our_brands": "Our Brands",
+    "learn_more": "Learn more",
+    "about_company": "About Company",
+    "company_description": "Established in 1998, Mazarina LLC had started production and sale of wine and other alcoholic products together with \"Ganja Sharab-2\" OJSC – the oldest manufacturer in Azerbaijan. In a short time, the products have become the leader of the Azerbaijani alcoholic beverage market and exported to foreign countries.",
+    "our_partners": "Our Partners"
+  },
+  "about": {
+    "title": "About Company",
+    "established": "Established",
+    "description": "Established in 1998, Mazarina LLC had started production and sale of wine and other alcoholic products together with \"Ganja Sharab-2\" OJSC – the oldest manufacturer in Azerbaijan."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Azerbaijan Republic, Baku, Str. Alaskar Gaibov, 1222/12",
+    "phone": "Phone",
+    "email": "Email",
+    "social": "Social Networks"
+  },
+  "admin": {
+    "login": "Admin Login",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Login",
+    "dashboard": "Admin Dashboard",
+    "brands": "Brands",
+    "partners": "Partners",
+    "settings": "Settings",
+    "logout": "Logout",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "errors": {
+    "rule_violation": "Rule violation: {{detail}}",
+    "not_found": "Page not found",
+    "server_error": "Server error",
+    "validation_error": "Validation error",
+    "unauthorized": "Unauthorized access"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading...",
+    "search": "Search",
+    "filter": "Filter"
+  }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="<%= currentLanguage %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="shortcut icon" href="/images/favicon.png">
+    
+    <!-- Google Fonts - Roboto & Roboto Slab (Original Mazarina Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="Mazarina Trade Company" style="height: 50px;">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/about"><%= t('nav.about') %></a></li>
+                    <li><a href="/brands"><%= t('nav.brands') %></a></li>
+                    <li><a href="/distribution"><%= t('nav.distribution') %></a></li>
+                    <li><a href="/career"><%= t('nav.career') %></a></li>
+                    <li><a href="/contact"><%= t('nav.contact') %></a></li>
+                </ul>
+                <div class="language-selector">
+                    <% supportedLanguages.forEach(lang => { %>
+                        <a href="/?lng=<%= lang %>" class="<%= req.i18n.language === lang ? 'active' : '' %>">
+                            <%= lang.toUpperCase() %>
+                        </a>
+                    <% }) %>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2><%= t('home.hero_title') %></h2>
+                <p><%= t('home.hero_subtitle') %></p>
+                <div class="hero-actions">
+                    <a href="/contact" class="btn btn-primary"><%= t('home.contact_us') %></a>
+                    <a href="/brands" class="btn btn-secondary"><%= t('home.see_brands') %></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Reputation Stats -->
+        <section class="stats">
+            <div class="container">
+                <div class="section-header">
+                    <h2 style="color: #101010; font-size: 24px; margin-bottom: 30px; text-align: center;">Business Reputation</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class='fas fa-calendar-alt'></i>
+                        </div>
+                        <div class="stat-number">Over 20+</div>
+                        <div class="stat-label"><%= t('home.stats.years') %></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class='fas fa-handshake'></i>
+                        </div>
+                        <div class="stat-number">More than 1000</div>
+                        <div class="stat-label"><%= t('home.stats.clients') %></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class='fas fa-tags'></i>
+                        </div>
+                        <div class="stat-number">More than 50+</div>
+                        <div class="stat-label"><%= t('home.stats.brands') %></div>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class='fas fa-users'></i>
+                        </div>
+                        <div class="stat-number">More than 100+</div>
+                        <div class="stat-label"><%= t('home.stats.employees') %></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class='fas fa-building'></i>
+                        </div>
+                        <div class="stat-number">More than 5</div>
+                        <div class="stat-label"><%= t('home.stats.warehouses') %></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class='fas fa-shipping-fast'></i>
+                        </div>
+                        <div class="stat-number">120+</div>
+                        <div class="stat-label"><%= t('home.stats.transports') %></div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="/distribution" class="btn btn-primary"><%= t('home.distribution_power') %></a>
+            </div>
+        </section>
+
+        <!-- Our Brands Section -->
+        <section class="brands-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-divider"></div>
+                    <h2 class="section-title"><%= t('home.our_brands') %></h2>
+                </div>
+                <div class="brand-carousel">
+                    <!-- Brand placeholder items - will be populated from database -->
+                    <div class="brand-item">
+                        <img src="/images/brands/brand-1.svg" alt="Ganja Sharab">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/images/brands/brand-2.svg" alt="Premium Wines">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/images/brands/brand-3.svg" alt="Craft Spirits">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/images/brands/brand-4.svg" alt="Brand 4">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/images/brands/brand-5.svg" alt="Brand 5">
+                    </div>
+                    <div class="brand-item">
+                        <img src="/images/brands/brand-6.svg" alt="Brand 6">
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="/brands" class="btn btn-primary"><%= t('home.learn_more') %></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Company Section -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="section-divider"></div>
+                        <h3><%= t('home.about_company') %></h3>
+                        <p><%= t('home.company_description') %></p>
+                        <a href="/about" class="btn btn-primary"><%= t('home.learn_more') %></a>
+                    </div>
+                    <div class="about-image">
+                        <img src="/images/about-image.jpg" alt="<%= t('home.about_company') %>" style="width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Partners Section -->
+        <section class="partners-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-divider"></div>
+                    <h2 class="section-title"><%= t('home.our_partners') %></h2>
+                </div>
+                <div class="partner-carousel">
+                    <!-- Partner placeholder items - will be populated from database -->
+                    <div class="partner-item">
+                        <img src="/images/partners/partner-1.svg" alt="Partner 1">
+                    </div>
+                    <div class="partner-item">
+                        <img src="/images/partners/partner-2.svg" alt="Partner 2">
+                    </div>
+                    <div class="partner-item">
+                        <img src="/images/partners/partner-3.svg" alt="Partner 3">
+                    </div>
+                    <div class="partner-item">
+                        <img src="/images/partners/partner-4.svg" alt="Partner 4">
+                    </div>
+                    <div class="partner-item">
+                        <img src="/images/partners/partner-5.svg" alt="Partner 5">
+                    </div>
+                    <div class="partner-item">
+                        <img src="/images/partners/partner-6.svg" alt="Partner 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Mazarina Trade Company</h4>
+                    <p><%= t('site.description') %></p>
+                </div>
+                <div class="footer-section">
+                    <h4><%= t('contact.title') %></h4>
+                    <p><i class='fas fa-phone'></i> <%= config.contact.phone %></p>
+                    <p><i class='fas fa-envelope'></i> <%= config.contact.email %></p>
+                    <p><i class='fas fa-map-marker-alt'></i> <%= config.contact.address %></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2015-2025 Mazarina Trade Company LLC. All rights reserved. Powered by Megavision International</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

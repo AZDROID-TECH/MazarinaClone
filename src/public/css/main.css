@@ -1,0 +1,544 @@
+/* Mazarina Trade Company - Authentic Design CSS */
+
+/* CSS Variables - Original Mazarina Color Palette */
+:root {
+    /* Primary Colors from original site */
+    --primary-blue: #6EC1E4;
+    --secondary-gray: #54595F;
+    --text-gray: #7A7A7A;
+    --accent-green: #61CE70;
+    --dark-blue: #4054B2;
+    --success-green: #23A455;
+    --black: #000000;
+    --white: #FFFFFF;
+    --yellow: #F2E12E; /* Key accent color */
+    
+    /* Background colors */
+    --bg-light-gray: #F9F9F9;
+    --bg-white: #FFFFFF;
+    --border-gray: #E7E7E7;
+    
+    /* Typography */
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Roboto Slab", sans-serif;
+    
+    /* Container widths */
+    --container-max-width: 1200px;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-gray);
+    font-weight: 400;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Header & Navigation - Authentic Mazarina Style */
+header {
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 15px 0;
+    min-height: 70px;
+    flex-direction: row !important;
+}
+
+nav .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    flex-direction: row !important;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo h1 {
+    font-family: var(--font-primary);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0;
+}
+
+.nav-links {
+    display: flex !important;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    align-items: center;
+    flex-direction: row !important;
+}
+
+.nav-links a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--yellow);
+}
+
+.nav-links a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--yellow);
+}
+
+/* Language selector */
+.language-selector {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.language-selector a {
+    color: var(--secondary-gray);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.language-selector a.active {
+    background: var(--yellow);
+    color: var(--black);
+    border-color: var(--yellow);
+}
+
+.language-selector a:hover {
+    background: var(--yellow);
+    color: var(--black);
+}
+
+/* Hero Section - Authentic Mazarina Style */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                url('/images/hero-bg.jpg') center/cover;
+    color: var(--white);
+    padding: 70px 0 50px 0;
+    text-align: left;
+    border-bottom: 3px solid var(--yellow);
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 20px;
+    line-height: 1.4;
+    max-width: 800px;
+}
+
+.hero .hero-subtitle {
+    font-size: 25px;
+    color: var(--yellow);
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 0.1;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--white);
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Buttons - Authentic Mazarina Style */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 1px solid;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background: transparent;
+    color: var(--yellow);
+    border-color: var(--yellow);
+    fill: var(--yellow);
+}
+
+.btn-primary:hover {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border-color: var(--white);
+    fill: var(--white);
+}
+
+.btn-secondary:hover {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+}
+
+/* Stats Section - Authentic Mazarina Cards */
+.stats {
+    padding: 50px 0 40px 0;
+    background: var(--bg-light-gray);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0;
+}
+
+.stat-item {
+    background: var(--bg-light-gray);
+    border: 1px solid var(--border-gray);
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.stat-item:hover {
+    background: var(--white);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--yellow);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.stat-icon i {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 900;
+}
+
+.stat-number {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 500;
+    color: #101010;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-family: var(--font-secondary);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--secondary-gray);
+    line-height: 1.2;
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-divider {
+    width: 5%;
+    height: 2px;
+    background: var(--yellow);
+    margin: 0 auto 20px;
+}
+
+.section-title {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--black);
+    margin: 0;
+}
+
+/* Brand/Partners Section */
+.brands-section,
+.partners-section {
+    background: var(--bg-light-gray);
+    border-bottom: 2px solid var(--yellow);
+    padding: 10px 0;
+}
+
+.brand-carousel,
+.partner-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.brand-item,
+.partner-item {
+    max-width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.brand-item:hover,
+.partner-item:hover {
+    opacity: 1;
+}
+
+.brand-item img,
+.partner-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* About Section */
+.about-preview {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text {
+    padding-right: 50px;
+}
+
+.about-text .section-divider {
+    margin: 0 0 20px 0;
+    width: 10%;
+}
+
+.about-text h3 {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-gray);
+    margin-bottom: 25px;
+}
+
+/* Footer - Authentic Mazarina Style */
+footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    color: #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section i {
+    color: var(--yellow);
+    margin-right: 10px;
+    width: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .stats {
+        padding: 50px 20px;
+    }
+    
+    .hero {
+        padding: 20px 0;
+    }
+    
+    .about-preview {
+        padding: 50px 20px;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-text {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 15px 0;
+        text-align: center;
+    }
+    
+    .hero h2 {
+        font-size: 20px;
+    }
+    
+    .hero .hero-subtitle {
+        font-size: 20px;
+    }
+    
+    .stats {
+        padding: 15px;
+    }
+    
+    .stat-item {
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+    
+    .about-preview {
+        padding: 15px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .brand-carousel,
+    .partner-carousel {
+        justify-content: space-around;
+    }
+    
+    .brand-item,
+    .partner-item {
+        max-width: 120px;
+        height: 60px;
+    }
+}
