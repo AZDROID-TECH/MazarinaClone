@@ -249,18 +249,18 @@ Client → Routes → Controllers → Services → Repositories → Database
 Client ← Views (EJS) ← Controllers (with data)
 ```
 
-### Layered Architecture
-- **Presentation Layer**: EJS templates və static assets
-- **Controller Layer**: HTTP request handling və routing
-- **Service Layer**: Business logic və data processing
-- **Repository Layer**: Database access və data persistence
-- **Middleware Layer**: Authentication, validation, error handling
+### Qatlı Arxitektura
+- **Təqdimat Qatı**: EJS şablonları və statik fayllar
+- **Nəzarətçi Qatı**: HTTP sorğularının idarə edilməsi və yönləndirilməsi
+- **Xidmət Qatı**: Biznes məntiqi və məlumatların emalı
+- **Verilənlər Bazası Qatı**: Verilənlər bazasına giriş və məlumatların saxlanması
+- **Aralıq Proqram Qatı**: Autentifikasiya, doğrulama, xəta emalı
 
-### Design Patterns
-- **Singleton**: Database connection instance
-- **Factory**: Error response factory
-- **Strategy**: Multi-language content delivery
-- **Observer**: Event-driven logging system
+### Dizayn Nümunələri  
+- **Tək Nüsxə**: Verilənlər bazası bağlantı nümunəsi
+- **Fabrika**: Xəta cavab yaradıcısı  
+- **Strategiya**: Çoxdilli məzmun çatdırılması
+- **Müşahidəçi**: Hadisə əsaslı qeydiyyat
 
 ## 📚 Istifadə Edilmiş Texnologiyalar
 
@@ -351,51 +351,6 @@ GET  /admin/brands       # Brendlər idarəetməsi
 GET  /admin/partners     # Tərəfdaşlar idarəetməsi
 GET  /admin/settings     # Sayt parametrləri
 ```
-
-## 🛠️ Inkishaf Qaydaları
-
-### Kod Yazma Qaydaları
-- **Yorumlar**: Əzaydəmi bütün yorumlar Azərbaycan dilində
-- **Identifier-lar**: Bütün dəyişən, funksiya və sinif adları İngilis dilində
-- **i18n Format**: Dot notation (məs. `home.title`)
-- **Error Handling**: Global error handler middleware istifadəsi
-- **Single Responsibility**: Hər modul tək məsəliyyyət daşır
-
-### Fayl Strukturu Qaydaları
-```
-✔️ Correct Structure:
-src/
-  controllers/    # HTTP request handlers
-  services/       # Business logic
-  repos/          # Database operations
-  middleware/     # Express middleware
-  utils/          # Helper functions
-  views/          # EJS templates
-```
-
-### Git Qaydaları
-- **Rules/**: Bu qovluq .gitignore-dadır
-- **node_modules/**: Asılılıqlar ignore edilir
-- **Commit Messages**: İngilis dilində və açıqlayıcı
-- **.env**: Production dəyərləri heç vaxt commit edilmir
-
-## 📜 Qaydalar Uyumluğu
-
-### Ümumi Qaydalar (Rules/Ümumi.md)
-✅ **Tətbiqlənən qaydalar:**
-- Yorumlar Azərbaycan dilində yazılıb
-- Identifier-lar İngilis dilində adlandırılıb
-- Dot notation format i18n üçün istifadə edilib
-- .gitignore-da Rules/ və node_modules/ əlavə edilib
-
-### ExpressEJS Qaydaları (Rules/ExpressEJS.md)
-✅ **Tətbiqlənən qaydalar:**
-- Single Responsibility prinsipində modul ayrımı
-- Controller/Service/Repository bölgüsü
-- Middleware-lərin təmiz ayrımı
-- Global error handler middleware
-- EJS template engine istifadəsi
-- SQLite3 və Knex ORM quraşdırılması
 
 ## 🧪 Test Coverage
 
